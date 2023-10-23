@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="icone de agenda">
+            <H1>Agenda de contatos</H1>
+        </header>
+        <div class="container-form">
+        <form id="form-contatos">
+            <input type="text" id="nome-contato" placeholder="Nome" required>
+            <input type="text" id="sobrenome-contato" placeholder="Sobrenome" required>
+            <input type="tel" maxlength="14" data-js="phone" id="telefone-contato" placeholder="Telefone" required>
+            <input type="text" id="apelido-contato" placeholder="Apelido(opcional)"> 
+            <button type="submit">Adicionar contato</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Foto
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Sobrenome
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                    <th>
+                        Apelido
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    <footer>
+        <p>
+            &copy; Agenda de Contatos - Todos os direitos reservados - 2023
+        </p>
+        <button onclick="limparTabela()">Limpar <strong>TODOS</strong> os contatos</button>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
