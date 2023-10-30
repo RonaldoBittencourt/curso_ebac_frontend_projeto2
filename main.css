@@ -36,7 +36,7 @@ header h1 {
 
 form {
     display: flex;
-    max-width: 640px;
+    max-width: 1172px;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 56px;
@@ -46,6 +46,7 @@ form {
 form input {
     font-size: 24px;
     background-color: #eae7ee;
+    width: 100%;
     border: none;
     border-bottom: 2px solid #cc3748;
     padding: 8px;
@@ -67,6 +68,10 @@ form button:hover {
 
 table {
     width: 100%;
+}
+
+.container-table {
+    overflow: auto;
 }
 
 table th {
